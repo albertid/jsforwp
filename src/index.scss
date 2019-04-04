@@ -1,0 +1,179 @@
+$medium: 768px;
+$small: 550px;
+
+#intContainer {
+
+    #switch {}
+
+    #dataContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 5em 0;
+        @media (max-width: $small) {
+            flex-direction: column;
+        }
+
+        #intMenu {
+            width: 25%;
+            @media (max-width: $small) {
+                width: 100%;
+            }
+            .ui.vertical.menu {
+                width: 100%;
+
+                .item {
+                    &:after,
+                    &:before {
+                        @media (max-width: $small) {
+                            border: 0 #fff none!important;
+                            width:0;
+                        }
+                    }
+                    @media (max-width: $small) {
+                        display: inline-flex;
+                        border: 0 #fff none!important;
+                        font-size: 1em;
+                        padding: .5em;
+                    }
+                }
+            }
+        }
+
+        #intBars {
+            width: 75%;
+            padding: 0 2em;
+
+            @media (max-width: $small) {
+                width: 100%;
+            }
+
+            #barsTitle {
+                font-size: 2em;
+                font-family: "franklin-gothic-urw",Verdana,Geneva,sans-serif;
+                font-weight: bold;
+                min-height:40px;
+                @media (max-width: $small) {
+                    margin-top: 2em;
+                    
+                }
+            }
+
+            #barsLegend {
+                display: flex;
+                justify-content: flex-start;
+                span {
+                    font-size:1.5em;
+                    display: flex;
+                    margin: 0 1em 0 0;
+                    div {
+                        height: 1em;
+                        width: 1em;
+                        margin: 0 .5em 0 0;
+                    }
+                    &:nth-of-type(1) div{
+                        background-color: #577B66;
+                    }
+
+                    &:nth-of-type(2) div{
+                        background-color: #809378;
+                    }
+
+                    &:nth-of-type(3) div{
+                        background-color: #aab08d;
+                    }
+
+                    &:nth-of-type(4) div{
+                        background-color: #cac69e;
+                    }
+                    &:nth-of-type(5) div {
+                        background-color: #ecdbac;
+                    }
+                }    
+            }
+
+            #barsContainer {
+                margin: 3em 0;
+                
+                .item {
+                    display: flex;
+    
+                    .barLabel {
+                        width: 25%;
+                        line-height: 1.6em;
+
+                        @media (max-width: $medium) {
+                            width: 100%;
+                        }
+
+                        .genLabel {
+                            font-size: 1.4em;
+                            font-weight: bold;
+                        }
+                        .genSub {
+                            font-size:1.2em;
+                        }
+                    }
+    
+                    .bars {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: flex-start;
+                        width: 75%;
+                        @media (max-width: $medium) {
+                            width: 100%;
+                        }
+    
+                        .bar {
+                            height: 5em;
+                            display: flex;
+                            span {
+                                text-align: center;
+                                margin: auto;
+                                color: #ffffff;
+                            }
+                            
+                            &:nth-of-type(1) {
+                                background-color: #577B66;
+                            }
+    
+                            &:nth-of-type(2) {
+                                background-color: #809378;
+                            }
+    
+                            &:nth-of-type(3) {
+                                background-color: #aab08d;
+                            }
+    
+                            &:nth-of-type(4) {
+                                background-color: #cac69e;
+                                span {
+                                    color: #7E7E7E;
+                                }
+                            }
+    
+                            &:nth-of-type(5) {
+                                background-color: #ecdbac;
+                                span {
+                                    color: #7E7E7E;
+                                }
+                            }
+                        }
+    
+                    }
+    
+                }
+            }
+
+            p.source {
+                color: #888;
+                font-family: "franklin-gothic-urw",Verdana,Geneva,sans-serif;
+                font-size: 1.1em;
+                font-style: normal;
+                margin-top: 20px;
+            }
+        }
+
+    }
+
+}
