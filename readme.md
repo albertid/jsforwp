@@ -1,3 +1,11 @@
+--4/4--
+
+https://pewresearch-org-preprod.go-vip.co/pewsocialtrends/interactives/comparing-generations-test/
+
+Password: JSforWP
+
+--OLD--
+
 Objective: Convert aging php/html data visualization into clean vanilla javascript with updated data.
 https://www.pewsocialtrends.org/interactives/comparing-generations/
 
